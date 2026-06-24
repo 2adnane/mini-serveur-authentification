@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Bienvenue, {{ user }} !</h1>
+
+        <p>
+            Vous etes authentifie avec succes sur le serveur Raspberry Pi.
+        </p>
+
+        <a class="btn" href="{{ url_for('logout') }}">
+            Se deconnecter
+        </a>
+    </div>
+</body>
+</html>
